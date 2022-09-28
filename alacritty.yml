@@ -1,0 +1,145 @@
+window:
+  opacity: 0.93
+  dimensions:
+   columns: 100
+   lines: 30
+  padding:
+    x: 10
+    y: 10
+  decorations: none
+  scrolling:
+    history: 100000
+    multiplier: 10
+
+
+font:
+  normal:
+    family: FiraCode Nerd Font Mono 
+    style: Regular
+
+  bold:
+    family: FiraCode Nerd Font Mono
+    style: Bold
+  italic:
+    family: FiraCode Nerd Font Mono
+    style: Italic
+
+  bold_italic:
+    family: Fira Mono
+    style: Bold Italic
+
+  size: 15.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+# Color scheme
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '0x1d1e2b'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x787c99'
+
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '0x24283b'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa27'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x9699a8'
+
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+# normal dark theme
+colors: *tokyo-night
+cursor:
+  style: Block
+  unfocused_hollow: true
+vi_mode_cursor:
+  vi_mode_style: Block
+
+# key_bindings:
+  # Rename the current tmux window
+  # - { key: Comma, mods: Command, chars: "\x02\x2c" }
+  # Select a new tmux session for the attached client interactively
+  # - { key: K, mods: Command, chars: "\x02\x73" }
+  # Select window 1-9
+  # - { key: Key1, mods: Command, chars: "\x02\x30" }
+  # - { key: Key2, mods: Command, chars: "\x02\x31" }
+  # - { key: Key3, mods: Command, chars: "\x02\x32" }
+  # - { key: Key4, mods: Command, chars: "\x02\x33" }
+  # - { key: Key5, mods: Command, chars: "\x02\x34" }
+  # - { key: Key6, mods: Command, chars: "\x02\x35" }
+  # - { key: Key7, mods: Command, chars: "\x02\x36" }
+  # - { key: Key8, mods: Command, chars: "\x02\x37" }
+  # - { key: Key9, mods: Command, chars: "\x02\x38" }
+  # Switch to last tmux session
+  # - { key: L, mods: Command, chars: "\x02\x4c" }
+  # - { key: LBracket, mods: Command, chars: "\x02\x5b" }
+  # Change to the previous tmux window
+  # - { key: LBracket, mods: Command|Shift, chars: "\x02\x70" }
+  # Split the current pane into two, left and right
+  # - { key: N, mods: Command|Shift, chars: "\x02\x25" }
+  # Split the current pane into two, top and bottom.
+  # - { key: E, mods: Command|Shift, chars: "\x02\x22" }
+  # Detach the current tmux client
+  # - { key: D, mods: Command|Shift, chars: "\x02\x64" }
+  # Change to the next tmux window
+  # - { key: RBracket, mods: Command|Shift, chars: "\x02\x6e" }
+  # Type <escape>:w<enter> to save neovim
+  # - { key: S, mods: Command, chars: "\x1b\x3a\x77\x0a" }
+  # Create a new tmux window
+  # - { key: T, mods: Command, chars: "\x02\x63" }
+  # Break the current tmux pane out of the tmux window
+  # - { key: T, mods: Command|Shift, chars: "\x02\x21" }
+  # Kill the current tmux pane (and window if last pane)
+  # - { key: W, mods: Command, chars: "\x02\x78" }
+  # Toggle the zoom state of the current tmux pane
+  # - { key: Z, mods: Command|Shift, chars: "\x02\x7a" }
